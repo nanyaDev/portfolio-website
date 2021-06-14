@@ -1,6 +1,6 @@
-module.exports = {
+export default {
   siteMetadata: {
-    title: "Portfolio Website",
+    title: 'Portfolio Website',
   },
   plugins: [],
 };
