@@ -1,8 +1,18 @@
 import React from 'react';
+// import styled from 'styled-components';
+import Hero from '../components/Hero';
+import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
+import About from '../components/About';
 
-// markup
 const IndexPage = () => {
-  return <h1>Hello from Gatsby!</h1>;
+  return (
+    <Layout>
+      <Navbar />
+      <Hero />
+      <About />
+    </Layout>
+  );
 };
 
 export default IndexPage;

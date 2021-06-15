@@ -2,5 +2,5 @@ export default {
   siteMetadata: {
     title: 'Portfolio Website',
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-styled-components`],
 };
