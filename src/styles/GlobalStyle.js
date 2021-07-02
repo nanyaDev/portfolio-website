@@ -40,6 +40,9 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     opacity: 0.75;
+    // fix opacity side effects
+    position: relative;
+    z-index: -1;
   }
 
   h3 {
@@ -49,7 +52,8 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
 
   button {
@@ -63,8 +67,19 @@ const GlobalStyle = createGlobalStyle`
     color: var(--primary);
   }
 
-  .code {
-    font-family: 'JetBrains Mono';
+  // Scrollbar Styles 
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--secondary);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--lightgray);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
   }
 `;
 

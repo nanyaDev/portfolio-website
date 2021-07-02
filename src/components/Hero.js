@@ -16,13 +16,19 @@ const HeroStyles = styled.section`
   > button {
     padding: 20px 30px;
   }
+
+  .hello {
+    font-family: 'JetBrains Mono';
+    position: relative;
+    top: 20px;
+  }
 `;
 
 const Hero = () => {
   return (
     <HeroStyles>
+      <span className="hl hello">Hi, my name is</span>
       <div>
-        <span className="hl code">Hi, my name is</span>
         <h1>Rishabh Chatterjee.</h1>
         <h2>I build things for the web.</h2>
       </div>
@@ -30,7 +36,7 @@ const Hero = () => {
         I’m a UK-based software engineer who specializes in building (and
         occasionally designing) exceptional digital experiences. Currently, I’m
         working at <span className="hl">Hwalgi</span>, a language learning
-        startup that I co-founded.
+        startup.
       </p>
       <button type="button">Get In Touch</button>
     </HeroStyles>

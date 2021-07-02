@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const NavStyles = styled.nav`
   height: 100px;
   width: 100vw;
+  padding-right: 30px;
   position: fixed;
   display: flex;
   justify-content: flex-end;
@@ -11,6 +12,7 @@ const NavStyles = styled.nav`
   background: var(--lightgray);
   font-family: 'JetBrains Mono';
   font-size: 14px;
+  z-index: 1;
 
   > * {
     margin-right: 30px;
